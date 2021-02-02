@@ -9,7 +9,7 @@
 `snowflake` 雪花的形状能惟妙惟肖的将算法的思想展示出来，它看上去像是沿着主干（时间戳），如果有重复，那么分叉分出机器id，如果仍有重复，再分叉，分出序列号。
 
 <p align="center">
-<img src="images/snowflake.png" alt="snowflake" style="max-width:30%;"  />
+<img src="images/snowflake.png" alt="snowflake" width="40%"   />
 </p>
 
 该图片由 `Clker-Free-Vector-Image` 在 `Pixabay` 上发布
@@ -45,7 +45,7 @@
 
 ## 贡献
 欢迎任何形式的贡献，感谢这些杰出的贡献者！
- 
+
 <a href="https://github.com/openwheel/snowflake/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=openwheel/snowflake" />
 </a>
