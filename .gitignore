@@ -1,0 +1,16 @@
+/build_*
+.idea/
+.project
+SOURCE_VERSION
+.settings/
+*.sw*
+.DS_Store
+tags
+TAGS
+.vimrc
+.vs
+.vscode
+.gdb_history
+/linux
+bazel.output.txt
+*~
