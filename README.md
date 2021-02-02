@@ -1,5 +1,7 @@
 # snowflake
 
+From [twitter-archive](https://github.com/twitter-archive)/**[snowflake](https://github.com/twitter-archive/snowflake)**
+
 ## snowflake 起因
 
 据说是 Twitter 将存储系统从 MySQL 迁移到 Cassandra 的过程中，由于 Cassandra 没有顺序 ID 生成机制，于是他们自己开发了一套可以全局生成唯一 ID 的服务，起名叫做 `Snowflake`。
@@ -11,6 +13,7 @@
 <p align="center">
 <img src="images/snowflake.png" alt="snowflake" width="40%"   />
 </p>
+
 
 该图片由 `Clker-Free-Vector-Image` 在 `Pixabay` 上发布
 
