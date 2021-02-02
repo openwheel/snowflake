@@ -20,20 +20,28 @@ From [twitter-archive](https://github.com/twitter-archive)/**[snowflake](https:/
 ## snowflake 算法
 
 - 算法
+
   snowflake 是 Twitter 开源的分布式 ID 生成算法，输出结果是一个 long 型的 ID。
+  
 - 核心思想
+
   - 41 位的时间序列作为毫秒数（精确到毫秒，41 位的长度可以使用69年）
   - 10 位的机器标识（`5 个 bit 是数据中心，5 个 bit 的机器 ID`共 10 位 的长度最多支持部署 1024 个节点）
   - 12 位的计数顺序号|流水号（12 位的计数顺序号支持每个节点每毫秒产生 4096 个ID序号）最高位是符号位，始终为 0。
   <p align="center">
   <img src="images/snowflake.jpeg" alt="snowflake" style="max-width:30%;"  />
   </p>
+  
 - 优点
+
   高性能、低延迟、独立的应用（依赖少，实现简单）、按时间有序
+  
 - 缺点
+
   依赖机器时间，若有回拨会导致生成 id 重复；id 并不是严格递增的，而是趋势递增的
 
 ## 使用场景
+
 - 唯一一条消息
 - 唯一一笔交易
 - 唯一一个用户
@@ -41,12 +49,15 @@ From [twitter-archive](https://github.com/twitter-archive)/**[snowflake](https:/
 - ...
 
 ## Java 实现版本
+
 @regan-xu
 
 ## Python 实现版本
+
 @luky1833
 
 ## 贡献
+
 欢迎任何形式的贡献，感谢这些杰出的贡献者！
 
 <a href="https://github.com/openwheel/snowflake/graphs/contributors">
